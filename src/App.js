@@ -26,7 +26,7 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="app">
             <header><h1>You need to do {todos.length}</h1></header>
             <TodoForm addTodo={addTodo}/>
             {todos.map((todo) =>

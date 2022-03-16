@@ -6,14 +6,16 @@ const TodoForm = ({addTodo}) => {
     function onSubmit(e) {
         e.preventDefault();
         addTodo(todoValue);
-        setTodoValue(''); //todo
+        setTodoValue('')
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className={"form"}>
             <input
                 type={"text"}
+                value={todoValue}
                 onChange={e => setTodoValue(e.target.value)}
+                placeholder={"Enter your task!"}
             />
             <button onClick={onSubmit}>Add todo</button>
         </form>

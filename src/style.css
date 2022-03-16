@@ -1,3 +1,62 @@
+input {
+    border: none;
+    padding: 0 15px;
+    margin: 0;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    width: 100px;
+    padding: 10px 12px;
+    border-radius: 0;
+    color: #5062b6;
+    background-color: #aebaf1;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button:active, button:hover, button:focus, .deleteBtn:hover{
+    background-color: #a1aee8;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5062b6;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #aebaf1;
+    background-color: #bcc6f1;
+}
+
 .complete {
     text-decoration: line-through;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: #bcc6f1;
+    border: 1px solid #aebaf1;
+}
+
+.todoItem div {
+    padding: 10px 15px;
+}
+
+.deleteBtn {
+    background-color: #aebaf1;
+    padding: 5px;
+    cursor: pointer;
 }
